@@ -1,0 +1,94 @@
+﻿@model IEnumerable<BlogWankrone.Models.Blog>
+
+@{
+    ViewBag.Title = "Index";
+}
+
+<h2>Blog Listesi</h2>
+<hr />
+<p>
+    @Html.ActionLink("Yeni Blog Ekle", "Create", null, new { @class = "btn btn-primary" })
+</p>
+<hr />
+
+<style>
+    .table-container {
+        margin: 0 auto;
+        width: 95%;
+    }
+
+    .btn-group-xs > .btn {
+        padding: 2px 6px;
+        font-size: 12px;
+        line-height: 1.5;
+        border-radius: 3px;
+    }
+
+    th {
+        padding-right: 100px !important; /* Aradaki boşluğu artırır */
+    }
+</style>
+
+
+@if (TempData["Blog"] != null)
+{
+    var blog = (BlogWankrone.Models.Blog)TempData["Blog"];
+
+    <div class="alert alert-success" role="alert">
+        <strong><span class="glyphicon glyphicon-ok"></span>@blog.Baslik</strong>Kayıt edildi.
+    </div>
+}
+
+
+<div class="table-container">
+    <table class="table table-bordered table-striped table-hover">
+        <thead>
+            <tr>
+                <th>@Html.DisplayNameFor(model => model.Category.KategoriAdi)</th>
+                <th>@Html.DisplayNameFor(model => model.Baslik)</th>
+                <th>@Html.DisplayNameFor(model => model.Resim)</th>
+                <th>@Html.DisplayNameFor(model => model.EklenmeTarihi)</th>
+                <th>@Html.DisplayNameFor(model => model.Onay)</th>
+                <th>@Html.DisplayNameFor(model => model.Anasayfa)</th>
+                <th>İşlemler</th>
+            </tr>
+        </thead>
+        <tbody>
+            @foreach (var item in Model)
+            {
+                <tr>
+                    <td>@Html.DisplayFor(modelItem => item.Category.KategoriAdi)</td>
+                    <td>@Html.DisplayFor(modelItem => item.Baslik)</td>
+                    <td>@Html.DisplayFor(modelItem => item.Resim)</td>
+                    <td>@Html.DisplayFor(modelItem => item.EklenmeTarihi)</td>
+                    <td>
+                        @if (item.Onay)
+                        {
+                            <label class="btn btn-success btn-sm">Onaylı</label>
+                        }
+                        else
+                        {
+                            <label class="btn btn-danger btn-sm">Onay Bekliyor</label>
+                        }
+                    </td>
+                    <td>
+                        @if (item.Anasayfa)
+                        {
+                            <label class="btn btn-success btn-sm">Anasayfa</label>
+                        }
+                        else
+                        {
+                            <label class="btn btn-danger btn-sm">Anasayfa Değil</label>
+                        }
+                    </td>
+                    <td style="white-space: nowrap;">
+                        <div class="btn-group-sm" style="display: flex; gap: 8px;">
+                            @Html.ActionLink("Edit", "Edit", new { id = item.Id }, new { @class = "btn btn-warning btn-xs" })
+                            @Html.ActionLink("Delete", "Delete", new { id = item.Id }, new { @class = "btn btn-danger btn-xs" })
+                        </div>
+                    </td>
+                </tr>
+            }
+        </tbody>
+    </table>
+</div>

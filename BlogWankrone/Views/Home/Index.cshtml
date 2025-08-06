@@ -1,0 +1,17 @@
+﻿@model IEnumerable<BlogWankrone.Models.BlogModel>
+
+
+@Html.Partial("BlogListesi", Model)
+
+
+@section SagKolon
+{
+
+    @Html.Partial("Search")
+
+
+    @{Html.RenderAction("KategoriListesi", "Category");}
+
+}
+
+

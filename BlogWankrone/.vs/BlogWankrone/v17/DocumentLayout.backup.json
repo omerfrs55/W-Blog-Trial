@@ -1,0 +1,71 @@
+{
+  "Version": 1,
+  "WorkspaceRootPath": "C:\\Users\\User\\source\\repos\\BlogWankrone\\",
+  "Documents": [
+    {
+      "AbsoluteMoniker": "D:0:0:{1BD44091-162A-4797-AC05-F5D67C5A8DE2}|BlogWankrone.csproj|c:\\users\\user\\source\\repos\\blogwankrone\\views\\blog\\list.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{1BD44091-162A-4797-AC05-F5D67C5A8DE2}|BlogWankrone.csproj|solutionrelative:views\\blog\\list.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{1BD44091-162A-4797-AC05-F5D67C5A8DE2}|BlogWankrone.csproj|c:\\users\\user\\source\\repos\\blogwankrone\\views\\home\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{1BD44091-162A-4797-AC05-F5D67C5A8DE2}|BlogWankrone.csproj|solutionrelative:views\\home\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{1BD44091-162A-4797-AC05-F5D67C5A8DE2}|BlogWankrone.csproj|c:\\users\\user\\source\\repos\\blogwankrone\\views\\shared\\bloglistesi.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{1BD44091-162A-4797-AC05-F5D67C5A8DE2}|BlogWankrone.csproj|solutionrelative:views\\shared\\bloglistesi.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    }
+  ],
+  "DocumentGroupContainers": [
+    {
+      "Orientation": 0,
+      "VerticalTabListWidth": 256,
+      "DocumentGroups": [
+        {
+          "DockedWidth": 200,
+          "SelectedChildIndex": 0,
+          "Children": [
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "List.cshtml",
+              "DocumentMoniker": "C:\\Users\\User\\source\\repos\\BlogWankrone\\Views\\Blog\\List.cshtml",
+              "RelativeDocumentMoniker": "Views\\Blog\\List.cshtml",
+              "ToolTip": "C:\\Users\\User\\source\\repos\\BlogWankrone\\Views\\Blog\\List.cshtml",
+              "RelativeToolTip": "Views\\Blog\\List.cshtml",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAQAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2025-08-06T05:47:03.491Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "Index.cshtml",
+              "DocumentMoniker": "C:\\Users\\User\\source\\repos\\BlogWankrone\\Views\\Home\\Index.cshtml",
+              "RelativeDocumentMoniker": "Views\\Home\\Index.cshtml",
+              "ToolTip": "C:\\Users\\User\\source\\repos\\BlogWankrone\\Views\\Home\\Index.cshtml",
+              "RelativeToolTip": "Views\\Home\\Index.cshtml",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAMAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2025-08-06T05:44:05.702Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "BlogListesi.cshtml",
+              "DocumentMoniker": "C:\\Users\\User\\source\\repos\\BlogWankrone\\Views\\Shared\\BlogListesi.cshtml",
+              "RelativeDocumentMoniker": "Views\\Shared\\BlogListesi.cshtml",
+              "ToolTip": "C:\\Users\\User\\source\\repos\\BlogWankrone\\Views\\Shared\\BlogListesi.cshtml",
+              "RelativeToolTip": "Views\\Shared\\BlogListesi.cshtml",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAEAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2025-08-06T05:38:12.106Z",
+              "EditorCaption": ""
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

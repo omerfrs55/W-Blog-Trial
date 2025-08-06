@@ -1,0 +1,64 @@
+﻿@model BlogWankrone.Models.Blog
+
+@{
+    ViewBag.Title = "Details";
+}
+
+
+
+<h1>@Model.Baslik</h1>
+<hr />
+
+<p>
+    <span class="glyphicon glyphicon-time"></span>
+    @Model.EklenmeTarihi
+</p>
+<img class="img-responsive" src="https://picsum.photos/800/300?grayscale" />
+<hr />
+<blockquote>
+    <p>@Model.Aciklama</p>
+</blockquote>
+<p>
+    @Model.Icerik
+</p>
+<hr />
+<div class="comment mt-3">
+    <div class="p-3 mb-3 bg-light border rounded">
+        <h4> Bir yorum bıkarın</h4>
+        <form role="form">
+            <div class="form-group">
+                <textarea class="form-control" rows="3"></textarea>
+            </div>
+            <button type="submit" class="btn btn bg-dark btn btn-outline-light mt-3">Submit</button>
+        </form>
+    </div>
+</div>
+
+
+<div class="d-flex mt-3 align-items-center">
+    <div class="flex-shrink-0">
+        <img src="https://picsum.photos/100/100?grayscale" alt="...">
+    </div>
+    <div class="flex-grow-1 ms-3">
+        This is some content from a media component. You can replace this with any content and adjust it as needed.
+    </div>
+</div>
+
+<div class="d-flex mt-3 align-items-center">
+    <div class="flex-shrink-0">
+        <img src="https://picsum.photos/100/100?grayscale" alt="...">
+    </div>
+    <div class="flex-grow-1 ms-3">
+        This is some content from a media component. You can replace this with any content and adjust it as needed.
+    </div>
+</div>
+
+
+
+@section SagKolon
+{
+
+    @Html.Partial("Search")
+
+
+}

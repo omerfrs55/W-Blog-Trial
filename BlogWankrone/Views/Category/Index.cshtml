@@ -1,0 +1,54 @@
+﻿@model IEnumerable<BlogWankrone.Models.CategoryModel>
+
+@{
+    ViewBag.Title = "Index";
+}
+
+<h2>Kategori Listesi</h2>
+<hr />
+<p>
+    @Html.ActionLink("Yeni Kategori Ekle", "Create", null, new { @class = "btn btn-primary" })
+</p>
+<hr />
+
+
+@if (TempData["Kategori"] != null)
+{
+    var blog = (BlogWankrone.Models.Category)TempData["Kategori"];
+
+    <div class="alert alert-success" role="alert">
+        <strong><span class="glyphicon glyphicon-ok"></span>@blog.KategoriAdi</strong>Kayıt edildi.
+    </div>
+}
+
+<table class="table table-bordered table-striped table-hover">
+    <tr>
+        <th style="width: 70%;">
+            @Html.DisplayNameFor(model => model.KategoriAdi)
+        </th>
+        <th style="width: 16%;">
+            @Html.DisplayNameFor(model => model.BlogSayisi)
+        </th>
+        <th style="width:150px;"></th>
+    </tr>
+
+    @foreach (var item in Model)
+    {
+        <tr>
+            <td>
+                @Html.DisplayFor(modelItem => item.KategoriAdi)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.BlogSayisi)
+            </td>
+            <td style="white-space: nowrap;">
+                <div class="btn-group-sm" style="display: flex; gap: 8px;">
+                    @Html.ActionLink("Edit", "Edit", new { id = item.Id }, new { @class = "btn btn-warning btn-xs" })
+                    @Html.ActionLink("Details", "Details", new { id = item.Id }, new { @class = "btn btn-primary btn-xs" })
+                    @Html.ActionLink("Delete", "Delete", new { id = item.Id }, new { @class = "btn btn-danger btn-xs" })
+                </div>
+            </td>
+        </tr>
+    }
+
+</table>
